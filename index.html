@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Osemwengie Arit Bright" />
+    <meta name="description" content="Arit Business School" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arit Business School</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- this is the header section -->
+    <header role="banner">
+      <h1>Arit Business School</h1>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#services">About</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- This is the main section that contains intro + services -->
+    <main id="main" role="main">
+      <section id="intro" aria-labelledby="intro-heading">
+        <h2 id="intro-heading">Welcome to Arit Business School</h2>
+        <p>
+          Arit Business School is a modern learning hub focused on equipping
+          learners with practical business and technology skills. Our programs
+          blend real-world projects with instructor guidance to help you launch
+          or accelerate your tech career.
+        </p>
+      </section>
+
+      <section id="services" aria-labelledby="services-heading">
+        <h2 id="services-heading">Our Services</h2>
+        <article aria-labelledby="webdev-heading">
+          <h3 id="webdev-heading">Web Development</h3>
+          <p>
+            Comprehensive training in HTML, CSS, JavaScript, React, Node.js and
+            full-stack practices.
+          </p>
+        </article>
+        <article aria-labelledby="uiux-heading">
+          <h3 id="uiux-heading">UI / UX Design</h3>
+          <p>
+            Design thinking, prototyping, and user research to create delightful
+            digital experiences.
+          </p>
+        </article>
+        <!-- <article aria-labelledby="uiux-heading">
+          <h3 id="uiux-heading">UI / UX Design</h3>
+          <p>
+            Design thinking, prototyping, and user research to create delightful
+            digital experiences.
+          </p>
+        </article> -->
+        <!-- <article aria-labelledby="uiux-heading">
+          <h3 id="uiux-heading">UI / UX Design</h3>
+          <p>
+            Design thinking, prototyping, and user research to create delightful
+            digital experiences.
+          </p>
+        </article> -->
+        <!-- <article aria-labelledby="uiux-heading">
+          <h3 id="uiux-heading">UI / UX Design</h3>
+          <p>
+            Design thinking, prototyping, and user research to create delightful
+            digital experiences.
+          </p>
+        </article> -->
+        <!-- <article aria-labelledby="uiux-heading">
+          <h3 id="uiux-heading">UI / UX Design</h3>
+          <p>
+            Design thinking, prototyping, and user research to create delightful
+            digital experiences.
+          </p>
+        </article> -->
+        <!-- <article aria-labelledby="uiux-heading">
+          <h3 id="uiux-heading">UI / UX Design</h3>
+          <p>
+            Design thinking, prototyping, and user research to create delightful
+            digital experiences.
+          </p>
+        </article> -->
+      </section>
+
+      <!-- Forms sections which contain the Sign Up _ Login -->
+      <section id="join" aria-labelledby="join-heading">
+        <h2 id="join-heading">Join Us</h2>
+
+        <!-- Sign Up Form -->
+        <form
+          id="signupForm"
+          action="/register"
+          method="post"
+          enctype="multipart/form-data"
+          aria-labelledby="signup-heading"
+        >
+          <h3 id="signup-heading">Sign Up</h3>
+
+          <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="signupName">Full Name:</label>
+            <input type="text" id="signupName" name="name" required />
+
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" name="email" required />
+
+            <label for="signupPassword">Password:</label>
+            <input
+              type="password"
+              id="signupPassword"
+              name="Password"
+              minlength="6"
+              required
+            />
+
+            <label for="signupConfirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="signupConfirmPassword"
+              name="confirmPassword"
+              minlength="6"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Prefrences</legend>
+
+            <p>Gender:</p>
+            <label for="signupGenderMale">
+              <input
+                type="radio"
+                id="signupGenderMale"
+                name="gender"
+                value="male"
+                required
+              />Male
+            </label>
+            <label for="signupGenderFemale">
+              <input
+                type="radio"
+                id="signupGenderFemale"
+                name="gender"
+                value="female"
+                required
+              />Female
+            </label>
+            <label for="signupGenderHermaphrodite">
+              <input
+                type="radio"
+                id="signupGenderHermaphrodite"
+                name="gender"
+                value="male"
+                required
+              />Hermaphrodite
+            </label>
+
+            <p>Hobbies:</p>
+            <label for="signuphobbyCoding">
+              <input
+                type="checkbox"
+                id="signuphobbyCoding"
+                name="hobbies"
+                value="Coding"
+              />Coding
+            </label>
+            <label for="signuphobbyReading">
+              <input
+                type="checkbox"
+                id="signuphobbyReading"
+                name="hobbies"
+                value="Reading"
+              />Reading
+            </label>
+            <label for="signuphobbyFootbal">
+              <input
+                type="checkbox"
+                id="signuphobbyFootbal"
+                name="hobbies"
+                value="Football"
+              />Football
+            </label>
+            <label for="signuphobbyTravelling">
+              <input
+                type="checkbox"
+                id="signuphobbyTravelling"
+                name="hobbies"
+                value="Travelling"
+              />Travelling
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Profile Picture</legend>
+
+            <label for="signupProfilePic">Upload Profile Picture:</label>
+            <input
+              type="file"
+              id="signupProfilePic"
+              name="ProfilePic"
+              accept="image/*"
+            />
+            <p>Accepted: image files.</p>
+          </fieldset>
+
+          <button type="submit">Register</button>
+        </form>
+
+        <!-- Login Form -->
+        <form
+          id="loginForm"
+          action="/login"
+          method="post"
+          aria-labelledby="login-heading"
+        >
+          <h3 id="login-heading">Login</h3>
+
+          <fieldset>
+            <legend>Account Info</legend>
+
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="email" required />
+
+            <label for="loginPassword">Password</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="password"
+              required
+            />
+          </fieldset>
+
+          <button type="submit">Login</button>
+        </form>
+      </section>
+      <!-- This is Contact section -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          If you have questions about courses, reach out via the contact form
+        </p>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>&copy; 2025 Arit Business School. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
